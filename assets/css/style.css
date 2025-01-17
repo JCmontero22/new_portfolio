@@ -16,12 +16,14 @@ html {
 
 body{
     font-size: 1.6rem;
-    height: 100%;
+    width: 100%;
     background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     font-family: var(--fuente-textos);
+    /* max-height: 80vh; */
+
 }
 
 
@@ -122,6 +124,7 @@ span{
     padding: 2rem 4rem;
     border-radius: 2rem;
     color: var(--blanco);
+    max-height: 75rem;
 }
 
 .info-personal__img{
@@ -211,7 +214,32 @@ span{
 
 /*************** CONTENIDO ***************/
 .contenido{
-    background-color: red;
+    overflow: auto;
+    max-height: 90rem;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-rows: 1.5fr 7.5fr;
+    row-gap: 2rem;
+    padding: 2rem;
+    border: solid 1px var(--blanco);
+    /* background-color: var(--colorPrincipalOscuro); */
+}
+
+.menu-contenido{
+    background-color: var(--colorPrincipal);
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.menu-contenido__iten{
+    
+}
+
+.menu-contenido__iten i{
+    margin-bottom: 2rem;
 }
 
 /***********************************************************
