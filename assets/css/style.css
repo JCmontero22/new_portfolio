@@ -1,0 +1,203 @@
+html {
+   box-sizing: border-box;
+    font-size: 62.5%;
+    min-height: 100%;
+    position: relative;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   font-size: 1.6rem;
+    height: 100%;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    font-family: var(--fuente-textos);
+}
+
+/*************** VARIABLES ***************/
+:root{
+    --fuente-nombre: "Jersey 15", serif;
+    --fuente-titulos: "Oswald", serif;
+    --fuente-textos: "Open Sans", serif;
+
+    --colorPrincipal: rgb(44, 44, 44);
+    --colorPrincipalOscuro: rgb(32, 32, 32);
+    --blanco: #efefef;
+    --gris: #969696;
+}
+
+/*************** ESTILOS GENERALES ***************/
+.contenedor{
+    max-width: 70%;
+    margin: 20rem auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+.copy{
+    font-weight: 700;
+}
+
+.cursores{
+    font-size: 1.5rem;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret { from, to { opacity: 1 } 50% { opacity: 0 } }
+/***********************************************************
+
+        ************ MAIN INDEX **********
+
+************************************************************/
+/*************** INFO ***************/
+
+.contenedor-infor-contenido{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 5rem;
+}
+
+.info-personal{
+    background-color: var(--colorPrincipal);
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    color: var(--blanco);
+}
+
+.info-personal__img{
+    text-align: center;
+}
+
+.info-personal__img img{
+    width: 30rem;
+    border-radius: 1rem;
+    margin-top: -8rem;   
+}
+
+.info-personal__nombre{
+    text-align: center;
+    font-family: var(--fuente-nombre);
+    margin-top: 2rem;
+}
+
+.info-personal__profescion{
+    text-align: center;
+    background-color: var(--colorPrincipalOscuro);
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.info-personal__redes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.info-personal__redes img{
+    width: 4rem;
+    background-color: var(--colorPrincipalOscuro);
+    padding: .5rem;
+    border-radius: .5rem;
+}
+
+.info-personal__info{
+    background-color: var(--colorPrincipalOscuro);
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.dato{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: solid 1px var(--gris);
+    padding: 1rem;
+}
+
+.dato:last-of-type{
+    border-bottom: none;
+}
+
+.dato__icono{
+    background-color: black;
+    padding: .5rem;
+    border-radius: .3rem;
+    margin-top: .5rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 0, 0, 0.674);
+}
+
+.dato__texto span{
+    font-size: 1rem;
+    
+}
+
+.dato__texto p{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+/*************** CONTENIDO ***************/
+.contenido{
+    background-color: red;
+}
+
+/***********************************************************
+
+        ************ MEDIAQUERYS **********
+
+************************************************************/
+@media screen and (max-width: 768px){
+    .contenedor-infor-contenido{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+
+    /* .info-personal{
+        padding: 2rem;
+    }
+
+    .info-personal__img img{
+        width: 100%;
+    } */
+
+    .contenedor{
+        max-width: 90%;
+        margin-top: 10rem;
+    }
+}
