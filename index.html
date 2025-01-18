@@ -109,24 +109,293 @@
         </div>
 
         <div class="contenido">
-            <nav class="menu-contenido">
-                <a href="#" class="menu-contenido__iten">
-                    <i class="fas fa-user fa-lg fa-fw"></i>
-                    Sobre mí
-                </a>
-                <a href="#" class="menu-contenido__iten">Resumen</a>
-                <a href="#" class="menu-contenido__iten">Experiencia</a>
-                <a href="#" class="menu-contenido__iten">Proyectos</a>
-                <a href="#" class="menu-contenido__iten">Contacto</a>
-            </nav>
 
-            <div class="detalle-contenido">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsum expedita inventore ipsa hic repellendus, ab, pariatur a sapiente unde animi, eum aliquid voluptatum vel consequuntur. Officia minus doloremque natus?
+            <!-- Nav tabs -->
+            <ul class="menu-contenido nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active menu-contenido__iten" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="true" >
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <p>Sobre mí</p>
+                    </button>
+                </li>
+               <!--  <li class="nav-item" role="presentation">
+                    <button class="nav-link menu-contenido__iten" id="resumen-tab" data-bs-toggle="tab" data-bs-target="#resumen" type="button" role="tab" aria-controls="resumen" aria-selected="false">
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <p>Resumen</p>
+                    </button>
+                </li> -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link menu-contenido__iten" id="experiensia-tab" data-bs-toggle="tab" data-bs-target="#experiencia" type="button" role="tab" aria-controls="experiencia" aria-selected="false">
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <p>Experiencia</p>
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link menu-contenido__iten" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <p>Proyectos</p>
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link menu-contenido__iten" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <p>Contacto</p>
+                    </button>
+                </li>
+            </ul>
+            
+            <!-- Tab panes -->
+            <div class="tab-content detalle-contenido">
+
+                <!-- Sobre mi -->
+                <div class="tab-pane  detalle" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+                    <div class="detalle__titulo">
+                        <h2>Sobre mí </h2> <div class="detalle__titulo-linea"></div>
+                    </div>
+
+                    <div class="detalle__texto">
+                    
+                        <p>
+                            Soy Johan Camilo Montero, un ingeniero de sistemas apasionado por la programación, la
+                            tecnología y los videojuegos. Soy una persona a la cual le encantan los retos y aprender
+                            sobre nuevas tecnologías. Busco día a día crecer tanto profesional como personalmente. Me
+                            encanta y me enorgullece lo que hago, siempre buscando mejorar y hacer las cosas cada vez
+                            mejor.
+                        </p>
+                        
+                        <p>
+                            Uno de mis logros más grandes es haber participado en la migración del sistema de gestión
+                            documental de la Universidad Surcolombiana, así como dar soporte al sistema de gestión
+                            documental Orfeo del Ejército Nacional. Además, disfruto mucho de hacer cursos para aprender
+                            cosas nuevas, investigar sobre cómo puedo hacer las cosas de mejor manera, leer sobre
+                            diferentes temas, jugar videojuegos y practicar deportes como fútbol y voleibol.
+                        </p>
+                    
+                        <h4> Ingeniero de sistemas</h4>
+                        <p>
+                            Soy un Ingeniero de Sistemas egresado de la Universidad Corhuila en 2018, apasionado por la
+                            tecnología y la innovación.
+                        </p>
+                    
+                    
+                        <h4> Desarrollo web:</h4>
+                        <p>
+                            Desarrollador web con mas de 5 años de experiensia tabajando para empresas importantes de la
+                            capital del huila, multinacional y para empresas que brindan servicio al el estado. 
+                        </p>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="tab-pane detalle active" id="experiencia" role="tabpanel" aria-labelledby="experiencia-tab">
+                    <div class="detalle__titulo">
+                        <h2>Experiencia </h2> <div class="detalle__titulo-linea"></div>
+                    </div>
+
+                    <div class="detalle-texto-card">
+                        <div class="card card-experiencia" >
+                            <img src="./assets/img/logoExperiencias/images.png" class="card-img-top card-experiencia__img" alt="...">
+                        
+                            <div class="card-body">
+                                <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                                <P class="card-text"> <strong>Tiempo:</strong> Del 26/08/2024 hasta la fecha</P>
+                                <div class="d-flex justify-content-center">
+                                    <button type="button" class="btn btn-secundario mt-3" data-bs-toggle="modal"
+                                        data-bs-target="#modalCgh">Mas detalles</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-experiencia" >
+                            <img src="./assets/img/logoExperiencias/logo.png" class="card-img-top card-experiencia__img" alt="...">
+                        
+                            <div class="card-body">
+                                <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                                <P class="card-text"> <strong>Tiempo:</strong> Del 26/08/2024 hasta la fecha</P>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <button type="button" class="btn btn-secundario" data-bs-toggle="modal"
+                                        data-bs-target="#modalCgh">Mas detalles</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-experiencia" >
+                            <img src="./assets/img/logoExperiencias/universidad-surcolombiana.png" class="card-img-top card-experiencia__img" alt="...">
+                        
+                            <div class="card-body">
+                                <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                                <P class="card-text"> <strong>Tiempo:</strong> Del 23/09/2021 hasta 15/10/2024</P>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <button type="button" class="btn btn-secundario" data-bs-toggle="modal"
+                                        data-bs-target="#modalCgh">Mas detalles</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card card-experiencia" data-bs-toggle="modal"
+                        data-bs-target="#modalCgh">
+                            <img src="./assets/img/logoExperiencias/LrbLJpdc_400x400 (copia).jpg" class="card-img-top card-experiencia__img" alt="...">
+                        
+                            <div class="card-body">
+                                <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
+                                <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2022</P>
+                                <!-- <div class="d-flex justify-content-center mt-3">
+                                    <button type="button" class="btn btn-secundario" data-bs-toggle="modal"
+                                        data-bs-target="#modalCgh">Mas detalles</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+               
+                <div
+                    class="tab-pane"
+                    id="messages"
+                    role="tabpanel"
+                    aria-labelledby="messages-tab"
+                >
+                     messages 
+                </div>
             </div>
         </div>
     </main>
 
+
+     <!--*************** MODALES ***************-->
+
+    <!-- Comfamiliar -->
+    <div class="modal fade" id="modalComfamiliar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Experiencia Comfamiliar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Tareas Realizadas:</h4>
+                    <p class="textoModal">
+                        Desarrollar software, especificar requerimientos, realizar pruebas, capacitar a los usuarios y
+                        poner en servicio los requerimientos y solicitudes, referentes a la aplicación sigas de
+                        Comfamiliar del Huila.
+                    </p>
+
+                    <h4>Tecnologias Utilizadas:</h4>
+                    <p class="textoModal">
+                        PHP puro orientados a objetos, arquitecturas modelo vista controlador, AJAX, JavaScrip, librería
+                        jQuery, datos JSON, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT,
+                        Bitbucket, Jira, metodología Scrum.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- usco -->
+    <div class="modal fade" id="modalUsco" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Experiencia Universidad Surcolombiana</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Tareas Realizadas:</h4>
+                    <p class="textoModal">
+                        Análisis, diseño, desarrollo, manejo de base de datos, soporte y actualización del sistema de
+                        gestión documental.
+                    </p>
+                    <p class="textoModal">
+                        Actualización a nuevas tecnologías del sistema de gestión documental de la universidad.
+                    </p>
+
+                    <h4>Tecnologias Utilizadas:</h4>
+                    <p class="textoModal">
+                        Para el soporte del sistema de gestión documental antiguo: PHP 5 puro orientados a objetos,
+                        arquitecturas modelo vista controlador, AJAX, JavaScrip, AngularJs, librería jQuery, datos JSON
+                        HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT, GitHub.
+                    </p>
+
+                    <p class="textoModal">
+                        Para la migracion del sistema: Angular Cli 16 para la parte del Front End, Laravel 8 para la
+                        parte del Back End como api, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER,
+                        GIT, GitHub.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Dacartec -->
+    <div class="modal fade" id="modalDacartec" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Experiencia Dacartec</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Tareas Realizadas:</h4>
+                    <p class="textoModal">
+                        Migración del proyecto Orion Lab 1 a nuevas tecnologías, análisis, diseño y lógica de proyecto.
+                    </p>
+
+                    <h4>Tecnologias Utilizadas:</h4>
+                    <p class="textoModal">
+                        PHP 8.2 puro, orientados a objetos,
+                        arquitecturas modelo vista controlador, API REST, AJAX, JavaScrip, librería JQuery, datos JSON
+                        HTML5, CSS3, Bootstrap, bases de datos relacionales MySql,
+                        Sourcetree, metodología scrum.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- C.G.H -->
+    <div class="modal fade" id="modalCgh" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Experiencia Dacartec</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4>Tareas Realizadas:</h4>
+                    <p class="textoModal">
+                        Soporte y mantenimiento al sistema de gestión documental Orfeo del ejército nacional.
+                    </p>
+
+                    <h4>Tecnologias Utilizadas:</h4>
+                    <p class="textoModal">
+                        PHP 5.3 puro, AJAX, JavaScrip, librería JQuery, datos JSON HTML5, CSS3, Oracle, servidor linux
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <script src="./assets/js/app.js"></script>
 
 </body>
-</html>
+</html> 
