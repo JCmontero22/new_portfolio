@@ -322,6 +322,7 @@ span{
     border-radius: 1rem;
     flex: 1 1 calc(50% - 2rem);
     box-shadow: 0px 3px 3px 3px rgba(112, 112, 112, 0.4);
+    position: relative;
 }
 
 .card-experiencia:hover{
@@ -332,6 +333,145 @@ span{
     max-width: 100px;
     height: 50px;
     margin: 0 auto;
+}
+
+.icon{
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.card-experiencia:active, 
+.card-experiencia:hover { 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-experiencia:active, 
+.card-experiencia:hover img{ 
+    width: 100%;
+}
+
+/*************** ESTILOS PROYECTOS ***************/
+.menu-proyectos{
+    margin-top: 2rem;
+    background-color: var(--colorPrincipalOscuro);
+    padding: 1rem;
+    border: none;
+}
+
+.menu-proyectos .active{
+    border-bottom: none;
+    border-top: none;
+    border-bottom: solid 1px;
+}
+
+.menu-proyectos__iten{
+    background-color: var(--colorPrincipalOscuro) !important;
+    color: var(--blanco) !important;
+}
+
+.contenido-proyectos{
+    
+}
+
+.contenedor-proyectos{
+    padding: 3rem 0; 
+    display: flex ;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.basico-item{
+    flex: 0 0 calc(33.3% - 2rem);
+    box-shadow: 0px 3px 3px 4px rgba(112, 112, 112, 0.4);
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: var(--colorPrincipalOscuro);
+}
+
+.basico-item__titulo{
+    margin-bottom: 3rem;
+    font-size: 2rem !important;
+    text-align: center;
+}
+
+.basico-item__tegnologias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.basico-item__texto{
+    margin-bottom: 2rem;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.basicos-item__enlases{
+    display: flex;
+    justify-content: space-around;
+    font-size: 3rem;
+}
+
+.basicos-item__enlases a{
+    color: var(--blanco);
+}
+
+/*************** ESTILOS SKILL ***************/
+.content-skill{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill{
+    flex: 0 0 calc(25% - 2rem);
+    border: solid 1px var(--blanco);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill:hover{
+    transform: scale(1.4);
+    background-color: var(--colorPrincipalOscuro);
+}
+
+.skill p{
+    font-size: 1rem;
+}
+
+.skill__img{
+    width: 8rem;
+}
+
+/*************** MODALES ***************/
+
+.modal-content{
+    padding: 2rem  2rem 0 2rem;
+}
+
+.modal-title{
+    font-size: 1.8rem !important;
+}
+
+.texto-modal{
+    font-size: 1.8rem !important;
+    margin: 1rem 0;   
+}
+
+.texto-modal{
+    margin-top: 1rem;
+    font-size: 1.6rem !important;
+    text-align: justify;
 }
 
 
@@ -351,6 +491,14 @@ span{
 @media screen and (max-width: 1320px){
     .contenedor{
         max-width: 85%;
+    }
+
+    .detalle-contenido{
+        padding: 3rem;
+    }
+
+    .basico-item{
+        flex: 0 0 calc(50% - 2rem);
     }
 }
 
@@ -409,5 +557,13 @@ span{
     }
     .detalle-contenido{
         padding: 1rem 1.5rem;
+    }
+
+    .basico-item{
+        flex: 0 0 calc(100% - 2rem);
+    }
+
+    .skill{
+        flex: 0 0 calc(50% - 2rem);
     }
 }   

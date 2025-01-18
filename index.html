@@ -42,7 +42,7 @@
     <main class="contenedor contenedor-infor-contenido">
         <div class="info-personal">
             <div class="info-personal__img">
-                <img src="./assets/img/foto.webp" alt="">
+                <img src="./assets/img/FOTO.png" alt="">
             </div>
 
             <div class="info-personal__nombre">
@@ -118,12 +118,7 @@
                         <p>Sobre mí</p>
                     </button>
                 </li>
-               <!--  <li class="nav-item" role="presentation">
-                    <button class="nav-link menu-contenido__iten" id="resumen-tab" data-bs-toggle="tab" data-bs-target="#resumen" type="button" role="tab" aria-controls="resumen" aria-selected="false">
-                        <i class="fas fa-user fa-lg fa-fw"></i>
-                        <p>Resumen</p>
-                    </button>
-                </li> -->
+               
                 <li class="nav-item" role="presentation">
                     <button class="nav-link menu-contenido__iten" id="experiensia-tab" data-bs-toggle="tab" data-bs-target="#experiencia" type="button" role="tab" aria-controls="experiencia" aria-selected="false">
                         <i class="fas fa-user fa-lg fa-fw"></i>
@@ -132,9 +127,16 @@
                 </li>
 
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link menu-contenido__iten" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
+                    <button class="nav-link menu-contenido__iten" id="proyectos-tab" data-bs-toggle="tab" data-bs-target="#proyectos" type="button" role="tab" aria-controls="proyectos" aria-selected="false">
                         <i class="fas fa-user fa-lg fa-fw"></i>
                         <p>Proyectos</p>
+                    </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link menu-contenido__iten" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">
+                        <i class="fas fa-user fa-lg fa-fw"></i>
+                        <p>Skills</p>
                     </button>
                 </li>
 
@@ -190,75 +192,319 @@
                     
                 </div>
 
-                <div class="tab-pane detalle active" id="experiencia" role="tabpanel" aria-labelledby="experiencia-tab">
+                <!-- Experiencias -->
+                <div class="tab-pane detalle" id="experiencia" role="tabpanel" aria-labelledby="experiencia-tab">
                     <div class="detalle__titulo">
                         <h2>Experiencia </h2> <div class="detalle__titulo-linea"></div>
                     </div>
 
-                    <div class="detalle-texto-card">
+                    <div class="detalle-texto-card" data-bs-toggle="modal" data-bs-target="#modalCgh">
                         <div class="card card-experiencia" >
                             <img src="./assets/img/logoExperiencias/images.png" class="card-img-top card-experiencia__img" alt="...">
                         
                             <div class="card-body">
                                 <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                                 <P class="card-text"> <strong>Tiempo:</strong> Del 26/08/2024 hasta la fecha</P>
-                                <div class="d-flex justify-content-center">
-                                    <button type="button" class="btn btn-secundario mt-3" data-bs-toggle="modal"
-                                        data-bs-target="#modalCgh">Mas detalles</button>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-experiencia" >
+                        <div class="card card-experiencia" data-bs-toggle="modal"
+                        data-bs-target="#modalDacartec">
                             <img src="./assets/img/logoExperiencias/logo.png" class="card-img-top card-experiencia__img" alt="...">
                         
                             <div class="card-body">
                                 <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                                 <P class="card-text"> <strong>Tiempo:</strong> Del 26/08/2024 hasta la fecha</P>
-                                <div class="d-flex justify-content-center mt-3">
-                                    <button type="button" class="btn btn-secundario" data-bs-toggle="modal"
-                                        data-bs-target="#modalCgh">Mas detalles</button>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-experiencia" >
+                        <div class="card card-experiencia" data-bs-toggle="modal" data-bs-target="#modalUsco">
                             <img src="./assets/img/logoExperiencias/universidad-surcolombiana.png" class="card-img-top card-experiencia__img" alt="...">
                         
                             <div class="card-body">
                                 <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                                 <P class="card-text"> <strong>Tiempo:</strong> Del 23/09/2021 hasta 15/10/2024</P>
-                                <div class="d-flex justify-content-center mt-3">
-                                    <button type="button" class="btn btn-secundario" data-bs-toggle="modal"
-                                        data-bs-target="#modalCgh">Mas detalles</button>
-                                </div>
                             </div>
                         </div>
 
-                        <div class="card card-experiencia" data-bs-toggle="modal"
-                        data-bs-target="#modalCgh">
+                        <div class="card card-experiencia" data-bs-toggle="modal" data-bs-target="#modalComfamiliar">
                             <img src="./assets/img/logoExperiencias/LrbLJpdc_400x400 (copia).jpg" class="card-img-top card-experiencia__img" alt="...">
                         
                             <div class="card-body">
                                 <P class="card-text"> <strong>Cargo:</strong> Desarrollador PHP</P>
                                 <P class="card-text"> <strong>Tiempo:</strong> Del 23/06/2021 hasta 31/12/2022</P>
-                                <!-- <div class="d-flex justify-content-center mt-3">
-                                    <button type="button" class="btn btn-secundario" data-bs-toggle="modal"
-                                        data-bs-target="#modalCgh">Mas detalles</button>
-                                </div> -->
                             </div>
                         </div>
                     </div>
-
                 </div>
-               
-                <div
-                    class="tab-pane"
-                    id="messages"
-                    role="tabpanel"
-                    aria-labelledby="messages-tab"
-                >
-                     messages 
+
+                <!-- Proyectos -->
+                <div class="tab-pane detalle" id="proyectos" role="tabpanel" aria-labelledby="proyectos-tab">
+                    <div class="detalle__titulo">
+                        <h2>Proyectos Personales </h2> <div class="detalle__titulo-linea"></div>
+                    </div>
+
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs menu-proyectos" id="myTabProyectos" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active menu-proyectos__iten" id="basicos-tab" data-bs-toggle="tab" data-bs-target="#basicos" type="button" role="tab" aria-controls="basicos" aria-selected="true">Proyectos basicos</button>
+                        </li>
+
+                        <!-- <li class="nav-item" role="presentation">
+                            <button class="nav-link menu-proyectos__iten" id="avanzados-tab" data-bs-toggle="tab" data-bs-target="#avanzados" type="button" role="tab" aria-controls="avanzados" aria-selected="true">Proyectos avanzados</button>
+                        </li> -->
+                    </ul>
+                 
+                    <div class="tab-content contenido-proyectos">
+                        <div class="tab-pane active" id="basicos" role="tabpanel" aria-labelledby="basicos-tab">
+                            <div class="contenedor-proyectos">
+
+                                <div class="basico-item">
+                                    <h4 class="basico-item__titulo">Pagina Web FreeLancer</h4>
+                                    <div class="basico-item__tegnologias">
+                                            <!-- <i class="fab fa-html5 fa-lg fa-fw" style="color: white;"></i>
+                                            <i class="fab fa-css3 fa-xl fa-fw" style="color: white;"></i>
+                                            <i class="fab fa-js fa-lg fa-fw" style="color: white"></i>
+                                            <i class="fab fa-php fa-lg fa-fw" style="color: white; font-size: 3rem;"></i>
+                                            <i class="fas fa-mail-bulk fa-lg fa-fw"></i> -->
+                                            <i class="fab fa-html5 fa-lg fa-fw" style="color: orangered;"></i>
+                                            <i class="fab fa-css3 fa-xl fa-fw" style="color: blue;"></i>
+                                            <i class="fab fa-js fa-lg fa-fw" style="color: rgb(184, 184, 5);"></i>
+                                            <i class="fab fa-php fa-lg fa-fw" style="color: rgb(60, 60, 253); font-size: 3rem;"></i>
+                                            <i class="fas fa-mail-bulk fa-lg fa-fw"></i>
+                                    </div>
+                                    <p class="basico-item__texto">Pagina web para Freelancer, con envio de correo con PHP mailer</p>
+                                    
+                                    <div class="basicos-item__enlases">
+                                        <a href="https://github.com/JCmontero22/PAGINA_FREELANCER" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github" > 
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://pagefreelance.jcmonterodev.pw/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> 
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="basico-item">
+                                    <h4 class="basico-item__titulo">Api Basica Laravel (Usuarios)</h4>
+                                    <div class="basico-item__tegnologias">
+                                        <i class="fab fa-laravel fa-lg fa-fw" style="color: red;"></i>
+                                        <i class="fas fa-database fa-lg fa-fw" style="color: gray;"></i>
+                                    </div>
+                                    <p class="basico-item__texto">API para la gestión de usuarios utilizando Laravel 10 y MySQL, que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar).</p>
+                                    
+                                    <div class="basicos-item__enlases">
+                                        <a href="https://github.com/JCmontero22/API_BASICA_LARAVEL_USUARIOS" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github" > <i class="fab fa-github"></i></a>
+                                        <a href="https://apilaravelusuarios.jcmonterodev.pw/api/usuarios" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> <i class="fas fa-link"></i></a>
+                                        <a href="./public/file_postman/API_USUARIOS_BASICA.postman_collection.json" download="API_USUARIOS_BASICA.postman_collection.json" target="_blank"> 
+                                            <img src="./assets/img/iconos/postman-icon-svgrepo-com.svg" alt="" width="30px"data-bs-toggle="tooltip" data-bs-placement="top" title="Coleccion Postman"> 
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="basico-item">
+                                    <h4 class="basico-item__titulo">Crud basico PHP (Usuarios)</h4>
+                                    <div class="basico-item__tegnologias">
+                                        <i class="fab fa-php fa-lg fa-fw" style="color: blue; font-size: 3rem;"></i>
+                                        <i class="fab fa-html5 fa-lg fa-fw" style="color: orangered"></i>
+                                        <i class="fab fa-css3 fa-lg fa-fw" style="color: blue;"></i>
+                                        <i class="fab fa-js fa-lg fa-fw" style="color: rgb(184, 184, 5);"></i>
+                                        <i class="fas fa-database fa-lg fa-fw" style="color: gray;"></i>
+                                    </div>
+                                    <p class="basico-item__texto">Gestión eficiente de usuarios mediante un CRUD, utilizando DataTable para una administración óptima y PHP 8.2 puro para el backend.</p>
+                                    
+                                    <div class="basicos-item__enlases">
+                                        <a href="https://github.com/JCmontero22/APLICATIVO-CRUD-1" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github" > <i class="fab fa-github"></i></a>
+                                        <a href="https://crudphp.jcmonterodev.pw" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> <i class="fas fa-link"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="basico-item">
+                                    <h4 class="basico-item__titulo">Blog Café</h4>
+                                    <div class="basico-item__tegnologias">
+                                        <i class="fab fa-html5 fa-lg fa-fw" style="color: orangered;"></i>
+                                        <i class="fab fa-css3 fa-lg fa-fw" style="color: blue;"></i>
+                                        <i class="fab fa-php fa-lg fa-fw" style="color: blue; font-size: 3rem;"></i>
+                                        <i class="fas fa-mail-bulk fa-lg fa-fw"></i>
+                                    </div>
+                                    <p class="basico-item__texto">Blog dedicado al cafe, realizado y diseñado con solo html5 y css3</p>
+                                    
+                                    <div class="basicos-item__enlases">
+                                        <a href="https://github.com/JCmontero22/BLOG_PARA_CAFE" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Github" > 
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                        <a href="https://blogcafe.jcmonterodev.pw/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Link del proyecto"> 
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="tab-pane proyectos-avanzados" id="avanzados" role="tabpanel" aria-labelledby="avanzados-tab">
+                            <h1>Hola</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="tab-pane detalle active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                    <div class="detalle__titulo">
+                        <h2>Skills</h2> <div class="detalle__titulo-linea"></div>
+                    </div>
+
+                    <div class="content-skill">
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/html.png" alt="HTML5">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/css3.png" alt="CSS3">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/bootstrap.png" alt="Booststrap">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/javascript.png" alt="JavaScrip">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/jquery.png" alt="Jquery">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/ajax.png" alt="Ajax">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/angular.png" alt="Angular">
+                            <p>2 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/php.png" alt="PHP">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/laravel_2.png" alt="Laravel">
+                            <p>2 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/4248245.png" alt="progracion orientada a objetos">
+                            <p>5 años de experiensia</p>
+                        </div>
+                        
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/MVC.png" alt="Modelo vista controlador">
+                            <p>5 años de experiensia</p>
+                        </div>
+                        
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/mysql.png" alt="Mysql">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/sqlServer.svg" alt="Sql Server">
+                            <p>4 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/github.png" alt="GitHub">
+                            <p>4 años de experiensia</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills -->
+                <div class="tab-pane detalle " id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                    <div class="detalle__titulo">
+                        <h2>Skills</h2> <div class="detalle__titulo-linea"></div>
+                    </div>
+
+                    <div class="content-skill">
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/html.png" alt="HTML5">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/css3.png" alt="CSS3">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/bootstrap.png" alt="Booststrap">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/javascript.png" alt="JavaScrip">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/jquery.png" alt="Jquery">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/ajax.png" alt="Ajax">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/angular.png" alt="Angular">
+                            <p>2 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/php.png" alt="PHP">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/laravel_2.png" alt="Laravel">
+                            <p>2 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/4248245.png" alt="progracion orientada a objetos">
+                            <p>5 años de experiensia</p>
+                        </div>
+                        
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/MVC.png" alt="Modelo vista controlador">
+                            <p>5 años de experiensia</p>
+                        </div>
+                        
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/mysql.png" alt="Mysql">
+                            <p>5 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/sqlServer.svg" alt="Sql Server">
+                            <p>4 años de experiensia</p>
+                        </div>
+
+                        <div class="skill">
+                            <img class="skill__img" src="./assets/img/logoSkills/github.png" alt="GitHub">
+                            <p>4 años de experiensia</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -270,22 +516,22 @@
     <!-- Comfamiliar -->
     <div class="modal fade" id="modalComfamiliar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered ">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel">Experiencia Comfamiliar</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h4>Tareas Realizadas:</h4>
-                    <p class="textoModal">
+                    <h4 class="titulo-modal">Tareas Realizadas:</h4>
+                    <p class="texto-modal">
                         Desarrollar software, especificar requerimientos, realizar pruebas, capacitar a los usuarios y
                         poner en servicio los requerimientos y solicitudes, referentes a la aplicación sigas de
                         Comfamiliar del Huila.
                     </p>
 
-                    <h4>Tecnologias Utilizadas:</h4>
-                    <p class="textoModal">
+                    <h4 class="titulo-modal">Tecnologias Utilizadas:</h4>
+                    <p class="texto-modal">
                         PHP puro orientados a objetos, arquitecturas modelo vista controlador, AJAX, JavaScrip, librería
                         jQuery, datos JSON, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT,
                         Bitbucket, Jira, metodología Scrum.
@@ -308,23 +554,23 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h4>Tareas Realizadas:</h4>
-                    <p class="textoModal">
+                    <h4 class="titulo-modal">Tareas Realizadas:</h4>
+                    <p class="texto-modal">
                         Análisis, diseño, desarrollo, manejo de base de datos, soporte y actualización del sistema de
                         gestión documental.
                     </p>
-                    <p class="textoModal">
+                    <p class="texto-modal">
                         Actualización a nuevas tecnologías del sistema de gestión documental de la universidad.
                     </p>
 
-                    <h4>Tecnologias Utilizadas:</h4>
-                    <p class="textoModal">
+                    <h4 class="titulo-modal">Tecnologias Utilizadas:</h4>
+                    <p class="texto-modal">
                         Para el soporte del sistema de gestión documental antiguo: PHP 5 puro orientados a objetos,
                         arquitecturas modelo vista controlador, AJAX, JavaScrip, AngularJs, librería jQuery, datos JSON
                         HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER, GIT, GitHub.
                     </p>
 
-                    <p class="textoModal">
+                    <p class="texto-modal">
                         Para la migracion del sistema: Angular Cli 16 para la parte del Front End, Laravel 8 para la
                         parte del Back End como api, HTML5, CSS3, Bootstrap, bases de datos relacionales SQL SERVER,
                         GIT, GitHub.
@@ -347,13 +593,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h4>Tareas Realizadas:</h4>
-                    <p class="textoModal">
+                    <h4 class="titulo-modal">Tareas Realizadas:</h4>
+                    <p class="texto-modal">
                         Migración del proyecto Orion Lab 1 a nuevas tecnologías, análisis, diseño y lógica de proyecto.
                     </p>
 
                     <h4>Tecnologias Utilizadas:</h4>
-                    <p class="textoModal">
+                    <p class="texto-modal">
                         PHP 8.2 puro, orientados a objetos,
                         arquitecturas modelo vista controlador, API REST, AJAX, JavaScrip, librería JQuery, datos JSON
                         HTML5, CSS3, Bootstrap, bases de datos relacionales MySql,
@@ -377,13 +623,13 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <h4>Tareas Realizadas:</h4>
-                    <p class="textoModal">
+                    <h4 class="titulo-modal">Tareas Realizadas:</h4>
+                    <p class="texto-modal">
                         Soporte y mantenimiento al sistema de gestión documental Orfeo del ejército nacional.
                     </p>
 
                     <h4>Tecnologias Utilizadas:</h4>
-                    <p class="textoModal">
+                    <p class="texto-modal">
                         PHP 5.3 puro, AJAX, JavaScrip, librería JQuery, datos JSON HTML5, CSS3, Oracle, servidor linux
                     </p>
                 </div>
