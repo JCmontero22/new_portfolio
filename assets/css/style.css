@@ -267,7 +267,6 @@ input[type="number"] {
 
 /*************** CONTENIDO ***************/
 .contenido{
-    /* max-height: 70rem;      */     
     border-radius: 2rem;
     display: grid;
     grid-template-rows: 1fr 6fr;
@@ -277,8 +276,7 @@ input[type="number"] {
 
 .contenedor-menu{
     display: flex;
-    justify-content: end;
-    
+    justify-content: end;   
 }
 
 .menu-contenido{
@@ -286,13 +284,13 @@ input[type="number"] {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-left: 30%; */
     border-radius: 1rem;
     padding: 1.5rem;
     border: unset !important;
-    /* width: 70%; */
     min-width: 70%
 }
+
+
 
 .menu-contenido__iten{
     display: flex;
@@ -305,6 +303,7 @@ input[type="number"] {
     background-color: var(--colorPrincipalOscuro) !important;
     color: var(--blanco) !important;
     border: unset !important;
+    width: 10rem;
 }
 
 .menu-contenido .active{
