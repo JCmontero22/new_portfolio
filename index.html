@@ -31,6 +31,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+    <!-- SWEETALERT2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="./assets/css/normalize.css"> 
 
@@ -42,7 +48,7 @@
     <main class="contenedor contenedor-infor-contenido">
         <div class="info-personal">
             <div class="info-personal__img">
-                <img src="./assets/img/FOTO.png" alt="">
+                <img src="./assets/img/foto_1.png" alt="">
             </div>
 
             <div class="info-personal__nombre">
@@ -111,48 +117,50 @@
         <div class="contenido">
 
             <!-- Nav tabs -->
-            <ul class="menu-contenido nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active menu-contenido__iten" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="true" >
-                        <i class="fas fa-user fa-lg fa-fw"></i>
-                        <p>Sobre mí</p>
-                    </button>
-                </li>
-               
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link menu-contenido__iten" id="experiensia-tab" data-bs-toggle="tab" data-bs-target="#experiencia" type="button" role="tab" aria-controls="experiencia" aria-selected="false">
-                        <i class="fas fa-user fa-lg fa-fw"></i>
-                        <p>Experiencia</p>
-                    </button>
-                </li>
-
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link menu-contenido__iten" id="proyectos-tab" data-bs-toggle="tab" data-bs-target="#proyectos" type="button" role="tab" aria-controls="proyectos" aria-selected="false">
-                        <i class="fas fa-user fa-lg fa-fw"></i>
-                        <p>Proyectos</p>
-                    </button>
-                </li>
-
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link menu-contenido__iten" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">
-                        <i class="fas fa-user fa-lg fa-fw"></i>
-                        <p>Skills</p>
-                    </button>
-                </li>
-
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link menu-contenido__iten" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab" aria-controls="messages" aria-selected="false">
-                        <i class="fas fa-user fa-lg fa-fw"></i>
-                        <p>Contacto</p>
-                    </button>
-                </li>
-            </ul>
+            <div class="contenedor-menu">
+                <ul class="menu-contenido nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active menu-contenido__iten" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="true" >
+                            <i class="fas fa-user fa-lg fa-fw"></i>
+                            <p>Sobre mí</p>
+                        </button>
+                    </li>
+                   
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link menu-contenido__iten" id="experiensia-tab" data-bs-toggle="tab" data-bs-target="#experiencia" type="button" role="tab" aria-controls="experiencia" aria-selected="false">
+                            <i class="fas fa-user fa-lg fa-fw"></i>
+                            <p>Experiencia</p>
+                        </button>
+                    </li>
+                
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link menu-contenido__iten" id="proyectos-tab" data-bs-toggle="tab" data-bs-target="#proyectos" type="button" role="tab" aria-controls="proyectos" aria-selected="false">
+                            <i class="fas fa-user fa-lg fa-fw"></i>
+                            <p>Proyectos</p>
+                        </button>
+                    </li>
+                
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link menu-contenido__iten" id="skills-tab" data-bs-toggle="tab" data-bs-target="#skills" type="button" role="tab" aria-controls="skills" aria-selected="false">
+                            <i class="fas fa-user fa-lg fa-fw"></i>
+                            <p>Skills</p>
+                        </button>
+                    </li>
+                
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link menu-contenido__iten" id="contacto-tab" data-bs-toggle="tab" data-bs-target="#contacto" type="button" role="tab" aria-controls="contacto" aria-selected="false">
+                            <i class="fas fa-user fa-lg fa-fw"></i>
+                            <p>Contacto</p>
+                        </button>
+                    </li>
+                </ul>
+            </div>
             
             <!-- Tab panes -->
             <div class="tab-content detalle-contenido">
 
                 <!-- Sobre mi -->
-                <div class="tab-pane  detalle" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
+                <div class="tab-pane detalle active" id="sobre" role="tabpanel" aria-labelledby="sobre-tab">
                     <div class="detalle__titulo">
                         <h2>Sobre mí </h2> <div class="detalle__titulo-linea"></div>
                     </div>
@@ -348,7 +356,7 @@
                 </div>
 
                 <!-- Skills -->
-                <div class="tab-pane detalle active" id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <div class="tab-pane detalle" id="skills" role="tabpanel" aria-labelledby="skills-tab">
                     <div class="detalle__titulo">
                         <h2>Skills</h2> <div class="detalle__titulo-linea"></div>
                     </div>
@@ -427,84 +435,41 @@
                     </div>
                 </div>
 
-                <!-- Skills -->
-                <div class="tab-pane detalle " id="skills" role="tabpanel" aria-labelledby="skills-tab">
+                <!-- Contacto -->
+                <div class="tab-pane detalle " id="contacto" role="tabpanel" aria-labelledby="contacto-tab">
                     <div class="detalle__titulo">
-                        <h2>Skills</h2> <div class="detalle__titulo-linea"></div>
+                        <h2>Contacto</h2> <div class="detalle__titulo-linea"></div>
                     </div>
 
-                    <div class="content-skill">
+                    <form action="" id="form-contacto" class="form-contacto">
+                        <fieldset>
+                            <legend>Contactame para mas informacion, trabajo tambien como freelance en proyectos para empresas o personas particulares.</legend>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/html.png" alt="HTML5">
-                            <p>5 años de experiensia</p>
-                        </div>
+                            <div class="campos">
+                                <div class="campo">
+                                    <input type="text" name="nombre" id="nombre" class="campo__input form-control" placeholder="Nombre *">
+                                </div>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/css3.png" alt="CSS3">
-                            <p>5 años de experiensia</p>
-                        </div>
+                                <div class="campo">
+                                    <input type="number" name="telefono" id="telefono" class="campo__input form-control" placeholder="Telefono">
+                                </div>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/bootstrap.png" alt="Booststrap">
-                            <p>5 años de experiensia</p>
-                        </div>
+                                <div class="campo">
+                                    <input type="email" name="email" id="email" class="campo__input form-control" placeholder="Email *">
+                                </div>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/javascript.png" alt="JavaScrip">
-                            <p>5 años de experiensia</p>
-                        </div>
+                                <div class="campo campo-mensaje">
+                                    <textarea name="mensaje" id="mensaje" placeholder="Mensaje"></textarea>
+                                </div>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/jquery.png" alt="Jquery">
-                            <p>5 años de experiensia</p>
-                        </div>
+                            </div>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/ajax.png" alt="Ajax">
-                            <p>5 años de experiensia</p>
-                        </div>
+                            <div class="d-flex justify-content-end mt-5">
+                                <button type="button" class="btn btn-secundario" onclick="gestionCorreo()">Enviar</button>
+                            </div>
 
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/angular.png" alt="Angular">
-                            <p>2 años de experiensia</p>
-                        </div>
-
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/php.png" alt="PHP">
-                            <p>5 años de experiensia</p>
-                        </div>
-
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/laravel_2.png" alt="Laravel">
-                            <p>2 años de experiensia</p>
-                        </div>
-
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/4248245.png" alt="progracion orientada a objetos">
-                            <p>5 años de experiensia</p>
-                        </div>
-                        
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/MVC.png" alt="Modelo vista controlador">
-                            <p>5 años de experiensia</p>
-                        </div>
-                        
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/mysql.png" alt="Mysql">
-                            <p>5 años de experiensia</p>
-                        </div>
-
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/sqlServer.svg" alt="Sql Server">
-                            <p>4 años de experiensia</p>
-                        </div>
-
-                        <div class="skill">
-                            <img class="skill__img" src="./assets/img/logoSkills/github.png" alt="GitHub">
-                            <p>4 años de experiensia</p>
-                        </div>
-                    </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
