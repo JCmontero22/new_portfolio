@@ -88,3 +88,30 @@ function validarFormatoCorreo(email) {
     const exprecionCorreo = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+[a-zA-Z]{2,}$/;
     return exprecionCorreo.test(email);
 }
+
+function organizarSkills(option) {
+    
+    console.log(option);
+    
+    let skill = document.querySelectorAll('.all');
+    
+    skill.forEach(element => {
+        if (option == 'all') {
+            console.log('entro1');
+            
+            element.classList.remove('skill-inactiva');    
+            element.classList.add('skill-activa');    
+        }else{
+            console.log('entro2');
+            
+            if (element.classList.contains(option)) {
+                element.classList.remove('skill-inactiva');    
+                element.classList.add('skill-activa');    
+            }else{
+                element.classList.add('skill-inactiva');    
+                element.classList.remove('skill-activa')
+            }
+        }
+    });
+    
+}

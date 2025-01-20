@@ -151,6 +151,14 @@ input[type="number"] {
     padding: unset !important;
 }
 
+.skill-activa{
+    display: flex !important;
+}
+
+.skill-inactiva{
+    display: none !important;
+}
+
 /***********************************************************
 
         ************ MAIN INDEX **********
@@ -336,6 +344,10 @@ input[type="number"] {
 
 .detalle__texto{
     margin-top: 2rem;
+    box-shadow: var(--shadow);
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: var(--colorPrincipalOscuro);
 }
 
 .detalle__texto p{
@@ -346,6 +358,8 @@ input[type="number"] {
 .detalle__texto p:last-of-type{
     margin-bottom: none;
 }
+
+/*************** EXPERIENSIA ***************/
 
 .detalle-texto-card{
     margin-top: 2rem;
@@ -399,6 +413,7 @@ input[type="number"] {
     background-color: var(--colorPrincipalOscuro);
     padding: 1rem;
     border: none;
+    border-radius: 1rem;
 }
 
 .menu-proyectos .active{
@@ -465,17 +480,22 @@ input[type="number"] {
     margin-top: 2rem;
     flex-wrap: wrap;
     gap: 2rem;
+    /* 
+    padding: 1rem;
+    border-radius: 1rem; */
 }
 
 .skill{
     flex: 0 0 calc(25% - 2rem);
-    border: solid 1px var(--blanco);
+    /* border: solid 1px var(--blanco); */
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--colorPrincipalOscuro);
+    box-shadow: var(--shadow);
 }
 
 .skill:hover{
@@ -491,6 +511,24 @@ input[type="number"] {
     width: 8rem;
 }
 
+.skill-btn{
+    background-color: var(--colorPrincipalOscuro);
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.skill-btn__btn{
+    color: var(--blanco);
+}
+
+.skill-btn__btn:focus{
+    color: var(--rojo);
+}
+
+.skill-btn__btn:hover{
+    color: var(--rojo);
+    cursor: pointer;
+}
 /*************** ESTILOS FORMULARIO CONTACTO ***************/
 .form-contacto{
     background-color: var(--colorPrincipalOscuro);
