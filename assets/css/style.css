@@ -277,14 +277,16 @@ input[type="number"] {
 .contenido{
     border-radius: 2rem;
     display: grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
     row-gap: 2rem;
     padding: 2rem;
 }
 
 .contenedor-menu{
     display: flex;
-    justify-content: end;   
+    justify-content: end;  
+    /* min-height: 13rem;
+    max-height: 13rem; */
 }
 
 .menu-contenido{
@@ -673,11 +675,14 @@ input[type="number"] {
 
     .contenido{
         padding: unset;
+        /* grid-template-rows: 2fr 8fr; */
     }
 
     .menu-contenido{
         max-width: 100%;
         gap: 1.5rem;
+       /*  min-height: unset;
+        max-height: unset; */
     }
     .detalle-contenido{
         padding: 1rem 1.5rem;
