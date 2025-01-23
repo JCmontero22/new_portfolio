@@ -277,7 +277,7 @@ input[type="number"] {
 .contenido{
     border-radius: 2rem;
     display: grid;
-    grid-template-rows: 1fr 7fr;
+    grid-template-rows: 1fr 6fr;
     row-gap: 2rem;
     padding: 2rem;
 }
@@ -285,8 +285,6 @@ input[type="number"] {
 .contenedor-menu{
     display: flex;
     justify-content: end;   
-    max-height: 13rem;
-    min-height: 13rem;
 }
 
 .menu-contenido{
